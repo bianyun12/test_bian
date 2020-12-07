@@ -1,0 +1,43 @@
+2020-08-27 16:25:51,311 - [test_invest_case.py-->line:91] - ERROR:  :: 2 != 0
+Traceback (most recent call last):
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pycharm/teamcity/diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mlamp/Desktop/python/python-project/project_day26/test_case/test_invest_case.py", line 87, in test_invest
+    self.assertEqual(expected['code'],invest_result['code'])
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pycharm/teamcity/diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 2 != 0
+2020-08-27 16:25:51,760 - [test_invest_case.py-->line:91] - ERROR:  :: 该标可投金额不足，可投金额：500.0 != 该标可投金额不足,可投金额：200.0
+Traceback (most recent call last):
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pycharm/teamcity/diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '该标可投金额不足，可投金额：500.0' != '该标可投金额不足,可投金额：200.0'
+- 该标可投金额不足，可投金额：500.0
+?         ^     ^
++ 该标可投金额不足,可投金额：200.0
+?         ^     ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mlamp/Desktop/python/python-project/project_day26/test_case/test_invest_case.py", line 88, in test_invest
+    self.assertEqual(expected['msg'],invest_result['msg'])
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pycharm/teamcity/diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 该标可投金额不足，可投金额：500.0 != 该标可投金额不足,可投金额：200.0
